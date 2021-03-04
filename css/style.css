@@ -351,11 +351,11 @@ template {
   display: none;
 }
 
-.header {
+.navbar {
   background-color: #fff;
 }
 
-.header-top {
+.navbar-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -363,11 +363,11 @@ template {
   padding-bottom: 40px;
 }
 
-.header-top .logo__image {
+.navbar-top .logo__image {
   max-width: 180px;
 }
 
-.header__search {
+.navbar__search {
   margin-right: auto;
   margin-left: 108px;
 }
