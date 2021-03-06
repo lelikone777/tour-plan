@@ -497,7 +497,7 @@ template {
 }
 
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 0;
 }
 
 .hotel-name {
@@ -517,7 +517,12 @@ template {
 }
 
 .stars {
+  display: flex;
   flex-basis: 100%;
+}
+
+.stars img:not(:last-child) {
+  margin-right: 2px;
 }
 
 .offer {
