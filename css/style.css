@@ -397,6 +397,10 @@ template {
 
 .navbar-menu__link {
   color: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -564,7 +568,13 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+  font-style: normal;
   font-weight: bold;
+}
+
+.rating__counter-small {
+  font-size: 10px;
+  line-height: 13px;
 }
 
 .swiper-container {
@@ -753,6 +763,9 @@ template {
   }
   .navbar__search {
     margin-left: auto;
+  }
+  .navbar-bottom__container {
+    max-width: 673px;
   }
   .navbar-menu {
     padding-top: 22px;
