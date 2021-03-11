@@ -3,7 +3,7 @@
 ymaps.ready(init);
 function init() {
   // Создание карты.
-  var myMap = new ymaps.Map("map", {
+  var myMap = new ymaps.Map("myMap", {
     // Координаты центра карты.
     // Порядок по умолчанию: «широта, долгота».
     // Чтобы не определять координаты центра карты вручную,
@@ -15,8 +15,12 @@ function init() {
   });
 
   // Хочу поставить Метку <<<<<<<<<
-  var placeMark = new ymaps.PlaceMark([7.895, 98.3002]);
-  map.geoObjects.add(placeMark);
+  var placemark = new ymaps.PlaceMark([7.895, 98.3002], {
+    baloonContentHeader: "",
+    baloonContentBody: "",
+    hintContent: "",
+  });
+  myMap.geoObjects.add(placemark);
 }
 
 const swiper = new Swiper(".swiper-container", {
@@ -38,13 +42,13 @@ const swiper = new Swiper(".swiper-container", {
 
 // keypPess(swiper, 37)
 
-document.addEventListener("keydown", function (e) {
-  if (e.keyCode == 37) {
-    swiper.slidePrev();
-    //Left arrow pressed
-  }
-  if (e.keyCode == 39) {
-    swiper.slideNext();
-    //Right arrow pressed
-  }
-});
+// document.addEventListener("keydown", function (e) {
+//   if (e.keyCode == 37) {
+//     swiper.slidePrev();
+//     //Left arrow pressed
+//   }
+//   if (e.keyCode == 39) {
+//     swiper.slideNext();
+//     //Right arrow pressed
+//   }
+// });
