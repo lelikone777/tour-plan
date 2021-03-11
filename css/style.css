@@ -628,11 +628,13 @@ template {
 }
 
 .booking {
+  font-family: Nunito, sans-serif;
   background-color: #0A223D;
   border-radius: 8px;
   width: 350px;
+  height: 210px;
   min-height: 210px;
-  padding: 28px;
+  padding: 29px 22px 26px 23px;
   color: #fff;
 }
 
@@ -862,13 +864,45 @@ template {
 }
 
 @media (max-width: 576px) {
+  .container {
+    max-width: 88%;
+  }
+  .navbar-top {
+    padding-top: 20px;
+  }
+  .navbar-top__menu-button {
+    margin-top: 7px;
+    margin-right: 2px;
+  }
   .logo {
-    width: 99px;
+    width: 100px;
+  }
+  .breadcrump-list {
+    padding-top: 19px;
+  }
+  .stars {
+    margin-top: 4px;
+    margin-right: 18px;
   }
   .slider {
-    height: 250px;
+    height: 179px;
+  }
+  .hotel {
+    padding: 0 0 70px;
+  }
+  .hotel-info {
+    padding-bottom: 38px;
+  }
+  .hotel-info__offer {
+    padding-right: 11px;
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .hotel-right {
+    min-height: 403px;
+  }
+  .map {
+    height: 173px;
   }
 }

@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximum-scale=1"
+    />
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -12,6 +16,10 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=1a1f7988-7c33-4645-86d2-4139954da30b&lang=ru_RU"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <header class="navbar">
@@ -130,7 +138,9 @@
           <!-- /.hotel-info__text -->
           <div class="rating hotel-info__rating">
             <span class="rating__text">User Rattings</span>
-            <span class="rating__counter">4.5/<span class="rating__counter-small">5</span></span>
+            <span class="rating__counter"
+              >4.5/<span class="rating__counter-small">5</span></span
+            >
           </div>
           <!-- /.hotel-info__rating -->
         </div>
@@ -228,7 +238,9 @@
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map"></div>
+            <div class="map">
+              <div id="map" style="width: 100%; height: 100%"></div>
+            </div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
