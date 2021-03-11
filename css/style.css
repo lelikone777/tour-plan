@@ -577,6 +577,10 @@ template {
   background-color: transparent;
 }
 
+.hotel-slider__button:active {
+  outline: none;
+}
+
 .hotel-slider__button--next {
   right: 18px;
   background-image: url("../img/arrow-next.svg");
@@ -788,7 +792,7 @@ template {
 
 .subscribe {
   position: relative;
-  width: 355px;
+  width: 350px;
   height: 55px;
   border-radius: 8px;
   overflow: hidden;
@@ -879,6 +883,10 @@ template {
   background-color: transparent;
   cursor: pointer;
   z-index: 99;
+}
+
+.reviews-slider__button:active {
+  outline: none;
 }
 
 .reviews-slider__button--prev {
@@ -1094,7 +1102,7 @@ template {
 
 @media (max-width: 576px) {
   .container {
-    max-width: 88%;
+    max-width: 87.5%;
   }
   .navbar-top {
     padding-top: 20px;
@@ -1130,6 +1138,18 @@ template {
   }
   .hotel-right {
     min-height: 403px;
+  }
+  .booking__info {
+    margin-bottom: 11px;
+  }
+  .booking__pricetag {
+    line-height: 33px;
+  }
+  .booking__per-room {
+    line-height: 10px;
+  }
+  .booking__number {
+    margin-right: 4px;
   }
   .map {
     height: 173px;
