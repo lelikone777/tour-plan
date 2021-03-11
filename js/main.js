@@ -23,14 +23,14 @@ function init() {
   myMap.geoObjects.add(placemark);
 }
 
-const swiper = new Swiper(".swiper-container", {
+const hotelSlider = new Swiper(".hotel-slider", {
   loop: true,
   autoplay: {
     delay: 5000,
   },
   navigation: {
-    nextEl: ".slider-button--next",
-    prevEl: ".slider-button--prev",
+    nextEl: ".hotel-slider__button--next",
+    prevEl: ".hotel-slider__button--prev",
   },
   keyboard: {
     enabled: true,
@@ -40,15 +40,20 @@ const swiper = new Swiper(".swiper-container", {
   // effect: 'flip',
 });
 
-// keypPess(swiper, 37)
+const reviewsSlider = new Swiper(".reviews-slider", {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    arrowLeftRight: true,
+  },
+  effect: 'flip',
+});
 
-// document.addEventListener("keydown", function (e) {
-//   if (e.keyCode == 37) {
-//     swiper.slidePrev();
-//     //Left arrow pressed
-//   }
-//   if (e.keyCode == 39) {
-//     swiper.slideNext();
-//     //Right arrow pressed
-//   }
-// });
