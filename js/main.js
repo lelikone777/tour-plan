@@ -21,6 +21,9 @@ function init() {
 
 const swiper = new Swiper(".swiper-container", {
   loop: true,
+  autoplay: {
+    delay: 5000,
+  },
   navigation: {
     nextEl: ".slider-button--next",
     prevEl: ".slider-button--prev",
@@ -29,4 +32,18 @@ const swiper = new Swiper(".swiper-container", {
     enabled: true,
     onlyInViewport: true,
   },
+  // effect: 'flip', 
+});
+
+// keypPess(swiper, 37)
+
+document.addEventListener("keydown", function (e) {
+  if (e.keyCode == 37) {
+    swiper.slidePrev();
+    //Left arrow pressed
+  }
+  if (e.keyCode == 39) {
+    swiper.slideNext();
+    //Right arrow pressed
+  }
 });
