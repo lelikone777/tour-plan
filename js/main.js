@@ -31,8 +31,9 @@ const swiper = new Swiper(".swiper-container", {
   keyboard: {
     enabled: true,
     onlyInViewport: true,
+    arrowLeftRight: true,
   },
-  // effect: 'flip', 
+  // effect: 'flip',
 });
 
 // keypPess(swiper, 37)
