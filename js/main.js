@@ -13,16 +13,15 @@ function init() {
     // от 0 (весь мир) до 19.
     zoom: 15,
   });
-}
 
   // Хочу поставить Метку <<<<<<<<<
   var placemark = new ymaps.PlaceMark([7.895, 98.3002], {
-    baloonContent: "Отель, в котором...",
-    hintContent: "Отель"
+    baloonContentHeader: "",
+    baloonContentBody: "",
+    hintContent: "",
   });
   myMap.geoObjects.add(placemark);
-  placemark.baloon.open();
-
+}
 
 const hotelSlider = new Swiper(".hotel-slider", {
   loop: true,
