@@ -17,6 +17,7 @@
     max-width: 700px
   .logo
     width: 132px
+    margin-top: -3px
   .navbar
     &-top
       padding-top: 30px
@@ -24,10 +25,11 @@
     &__search
       margin-left: 6.8%
     &-bottom
+      height: 60px
       &__container
         max-width: 673px
     &-menu
-      padding-top: 22px
+      padding-top: 19px
       padding-bottom: 22px
       &__link
         font-size: 12px
@@ -36,6 +38,7 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 57px
     &-grid
       flex-direction: column
     &__slider
@@ -47,20 +50,51 @@
   .booking
     width: 340px
     padding: 28px 23px 20px 22px
+    &__info
+      margin-bottom: 7px
+    &__pricetag
+      line-height: 33px
   .map
     width: 340px
+  .newsletter
+    padding: 72px 0 73px
   .reviews
+    padding-top: 15px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
     &-slider
       &__item
         max-width: 580px
+        margin-top: 25px
+        padding-bottom: 17px
+      &__button
+        top: 45%
+        &--prev
+          left: 0
+        &--next
+          right: 0
+      &__date
+        margin-bottom: 3px
+      &__rating
+        margin-left: 4px
   .activities
     &-wrapper
       flex-wrap: wrap
+    &__title
+      margin-top: 25px
+      margin-bottom: 56px
     &__card
       margin-bottom: 20px
   .card
     width: 340px
-    height: 230px
+    height: 255px
+    &__title
+      max-width: 200px
+    &__button
+      padding: 7px 22px 7px 20px
 
 @media (max-width: 768px)
   .container
