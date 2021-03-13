@@ -16,9 +16,9 @@ function init() {
 
   // Хочу поставить Метку <<<<<<<<<
   var placemark = new ymaps.PlaceMark([7.895, 98.3002], {
-    baloonContentHeader: "",
-    baloonContentBody: "",
-    hintContent: "",
+    // baloonContentHeader: "sdgsg",
+    baloonContentBody: "sgsgsdg",
+    hintContent: "sgsgsg",
   });
   myMap.geoObjects.add(placemark);
 }
@@ -42,18 +42,11 @@ const hotelSlider = new Swiper(".hotel-slider", {
 
 const reviewsSlider = new Swiper(".reviews-slider", {
   loop: true,
-  autoplay: {
-    delay: 5000,
-  },
   navigation: {
     nextEl: ".reviews-slider__button--next",
     prevEl: ".reviews-slider__button--prev",
   },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-    arrowLeftRight: true,
-  },
-  effect: 'flip',
+
+  // effect: 'flip',
 });
 
