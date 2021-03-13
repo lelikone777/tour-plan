@@ -16,9 +16,9 @@ function init() {
 
   // Хочу поставить Метку <<<<<<<<<
   var placemark = new ymaps.PlaceMark([7.895, 98.3002], {
-    baloonContentHeader: "",
-    baloonContentBody: "",
-    hintContent: "",
+    // baloonContentHeader: "sdgsg",
+    baloonContentBody: "sgsgsdg",
+    hintContent: "sgsgsg",
   });
   myMap.geoObjects.add(placemark);
 }
