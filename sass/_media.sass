@@ -10,7 +10,7 @@
         object-fit: cover
   .card
     width: 230px
-    height: 230px
+    min-height: 230px
 
 @media (max-width: 992px)
   .container, .newsletter-wrapper
@@ -81,16 +81,17 @@
       &__rating
         margin-left: 4px
   .activities
+    padding-top: 14px
     &-wrapper
       flex-wrap: wrap
     &__title
-      margin-top: 25px
-      margin-bottom: 56px
+      padding-top: 25px
+      padding-bottom: 56px
     &__card
       margin-bottom: 20px
   .card
     width: 340px
-    height: 255px
+    min-height: 255px
     &__title
       max-width: 200px
     &__button
@@ -176,7 +177,7 @@
     padding-bottom: 60px
   .card
     width: 49%
-    height: 255px
+    min-height: 255px
     
 @media (max-width: 576px)
   .container
@@ -273,7 +274,7 @@
     &__title
       font-size: 18px
       line-height: 23px
-      margin-bottom: 36px
+      padding-bottom: 38px
   .card
     width: 100%
     &:nth-child(1)

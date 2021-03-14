@@ -823,7 +823,7 @@ template {
 }
 
 .reviews {
-  padding: 9px 0 70px;
+  padding: 9px 0 84px;
 }
 
 .reviews__title {
@@ -845,7 +845,7 @@ template {
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
-  padding: 0 62px 30px;
+  padding: 0 62px 16px;
 }
 
 .reviews-slider__item::before {
@@ -872,7 +872,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 44%;
+  top: 46%;
   transform: translateY(-50%);
   width: 30px;
   height: 30px;
@@ -921,6 +921,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #EC1F46;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -929,7 +930,7 @@ template {
   font-weight: normal;
   font-size: 10px;
   line-height: 13px;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .reviews-slider__rating {
@@ -937,6 +938,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 4px;
 }
 
 .reviews-slider__text {
@@ -953,12 +955,13 @@ template {
 }
 
 .activities__title {
+  margin: 0;
+  padding: 20px 0 57px;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 57px;
 }
 
 .activities-wrapper {
@@ -972,7 +975,7 @@ template {
   flex-direction: column;
   align-items: flex-start;
   width: 255px;
-  height: 255px;
+  min-height: 255px;
   border-radius: 6px;
   overflow: hidden;
   padding: 24px 26px;
@@ -1012,6 +1015,7 @@ template {
 }
 
 .card__button {
+  font-family: Nunito, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -1038,7 +1042,7 @@ template {
   }
   .card {
     width: 230px;
-    height: 230px;
+    min-height: 230px;
   }
 }
 
@@ -1134,19 +1138,22 @@ template {
   .reviews-slider__rating {
     margin-left: 4px;
   }
+  .activities {
+    padding-top: 14px;
+  }
   .activities-wrapper {
     flex-wrap: wrap;
   }
   .activities__title {
-    margin-top: 25px;
-    margin-bottom: 56px;
+    padding-top: 25px;
+    padding-bottom: 56px;
   }
   .activities__card {
     margin-bottom: 20px;
   }
   .card {
     width: 340px;
-    height: 255px;
+    min-height: 255px;
   }
   .card__title {
     max-width: 200px;
@@ -1251,7 +1258,7 @@ template {
   }
   .card {
     width: 49%;
-    height: 255px;
+    min-height: 255px;
   }
 }
 
@@ -1376,7 +1383,7 @@ template {
   .activities__title {
     font-size: 18px;
     line-height: 23px;
-    margin-bottom: 36px;
+    padding-bottom: 38px;
   }
   .card {
     width: 100%;
