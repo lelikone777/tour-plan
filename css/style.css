@@ -789,6 +789,7 @@ template {
 }
 
 .subscribe {
+  display: block;
   position: relative;
   width: 350px;
   min-height: 55px;
@@ -1119,7 +1120,7 @@ template {
     padding-bottom: 17px;
   }
   .reviews-slider__button {
-    top: 45%;
+    top: 47%;
   }
   .reviews-slider__button--prev {
     left: 0;
@@ -1327,10 +1328,11 @@ template {
     font-size: 30px;
     line-height: 38px;
   }
-  .subscribe {
-    width: 97%;
+  .newsletter .subscribe {
+    width: 280px;
+    margin-left: 8px;
   }
-  .subscribe__button {
+  .newsletter .subscribe__button {
     font-size: 12px;
     line-height: 15px;
   }
