@@ -1028,6 +1028,270 @@ template {
   cursor: pointer;
 }
 
+.other-packages {
+  padding: 40px 0 70px;
+}
+
+.other-packages__title {
+  margin: 0;
+  padding: 0 0 65px;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.other-packages__wrapper {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.other-packages__main-card {
+  height: 500px;
+  border-radius: 8px;
+  background-color: #0A223D;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  grid-column: 1 / span 2;
+}
+
+.other-packages__main-card-img {
+  width: 50%;
+  height: 500px;
+}
+
+.other-packages__main-card-offer {
+  position: absolute;
+  padding: 8px 12px 7px 11px;
+  top: 26px;
+  left: 0;
+  background-color: #EC1F46;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.other-packages__main-card-info {
+  width: 50%;
+  height: 100%;
+  padding: 46px 21px 30px 43px;
+  color: #fff;
+}
+
+.other-packages__main-card-rating {
+  display: flex;
+  margin: -1px 0 0 2px;
+}
+
+.other-packages__main-card-rating img {
+  margin-right: 2px;
+}
+
+.other-packages__main-card-title {
+  margin: 5px 0 27px 2px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.other-packages__main-card-text {
+  margin-left: 2px;
+  margin-bottom: 41px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+}
+
+.other-packages__main-card-room {
+  margin-bottom: 37px;
+  margin-left: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.other-packages__main-card-geo, .other-packages__main-card-guests, .other-packages__main-card-rooms {
+  display: block;
+  max-width: 205px;
+  padding-left: 28px;
+  background-repeat: no-repeat;
+}
+
+.other-packages__main-card-geo:not(:last-child), .other-packages__main-card-guests:not(:last-child), .other-packages__main-card-rooms:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.other-packages__main-card-geo {
+  background-image: url("../img/pin.svg");
+}
+
+.other-packages__main-card-guests {
+  background-image: url("../img/user.svg");
+}
+
+.other-packages__main-card-rooms {
+  background-image: url("../img/home.svg");
+}
+
+.other-packages__main-card-crossed {
+  margin: -2px 0 0 4px;
+  text-decoration: line-through;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.other-packages__main-card-book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 4px;
+}
+
+.other-packages__main-card-price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.other-packages__main-card-button {
+  padding: 10px 27px 10px 24px;
+  background-color: #EC1F46;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.other-packages__card {
+  height: 500px;
+  border-radius: 8px;
+  background-color: #0A223D;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.other-packages__card-img {
+  display: block;
+  width: 100%;
+  height: 50%;
+}
+
+.other-packages__card-offer {
+  position: absolute;
+  padding: 4px 9px;
+  top: 26px;
+  left: 0;
+  background-color: #EC1F46;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.other-packages__card-info {
+  height: 250px;
+  padding: 30px 21px 25px 32px;
+}
+
+.other-packages__card-title {
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.other-packages__card-room {
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.other-packages__card-geo, .other-packages__card-guests, .other-packages__card-rooms {
+  display: block;
+  max-width: 205px;
+  padding-left: 28px;
+  background-repeat: no-repeat;
+}
+
+.other-packages__card-geo:not(:last-child), .other-packages__card-guests:not(:last-child), .other-packages__card-rooms:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.other-packages__card-geo {
+  background-image: url("../img/pin.svg");
+}
+
+.other-packages__card-guests {
+  background-image: url("../img/user.svg");
+}
+
+.other-packages__card-rooms {
+  background-image: url("../img/home.svg");
+}
+
+.other-packages__card-crossed {
+  margin: -1px 0 0 1px;
+  text-decoration: line-through;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.other-packages__card-book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 4px;
+}
+
+.other-packages__card-price {
+  margin-left: -4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.other-packages__card-button {
+  padding: 10px 27px 10px 24px;
+  background-color: #EC1F46;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
