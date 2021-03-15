@@ -1066,6 +1066,7 @@ template {
 .other-packages__main-card-img {
   width: 50%;
   height: 500px;
+  object-fit: cover;
 }
 
 .other-packages__main-card-offer {
@@ -1198,6 +1199,7 @@ template {
 .other-packages__card-img {
   width: 100%;
   height: 50%;
+  object-fit: cover;
 }
 
 .other-packages__card-offer {
