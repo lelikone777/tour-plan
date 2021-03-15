@@ -15,10 +15,10 @@ function init() {
   });
 
   // Хочу поставить Метку <<<<<<<<<
-  var placemark = new ymaps.PlaceMark([7.895, 98.3002], {
+  var placemark = new ymaps.Placemark([7.895, 98.3002], {
     // baloonContentHeader: "sdgsg",
-    baloonContentBody: "sgsgsdg",
-    hintContent: "sgsgsg",
+    baloonContentBody: "GRAND HILTON HOTEL",
+    hintContent: "GRAND HILTON HOTEL",
   });
   myMap.geoObjects.add(placemark);
 }
