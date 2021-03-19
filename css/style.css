@@ -1298,6 +1298,79 @@ template {
   cursor: pointer;
 }
 
+.footer {
+  background-color: #0A223D;
+  color: #fff;
+  padding-top: 108px;
+  padding-bottom: 46px;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  grid-auto-rows: minmax(40px, min-content);
+}
+
+.footer__logo {
+  grid-row: 1 / 4;
+}
+
+.footer__categories {
+  grid-row: 1 / 4;
+}
+
+.footer__social-links {
+  display: flex;
+  align-items: center;
+  min-width: 83px;
+  justify-content: space-between;
+}
+
+.footer__social-network {
+  grid-row: 2 / 4;
+  grid-column: span 2;
+  display: flex;
+  align-content: center;
+}
+
+.footer__contact-details {
+  grid-column: span 2;
+}
+
+.footer__ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+}
+
+.footer__title--inline {
+  margin: 0;
+  margin-right: 43px;
+}
+
+.footer__item {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.footer__link {
+  color: #BDBDBD;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
