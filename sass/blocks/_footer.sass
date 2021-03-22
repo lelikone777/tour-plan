@@ -11,10 +11,16 @@
     grid-gap: 20px
   &__logo
     grid-row: 1 / 3
-    width: 166px
+    width: 156px
     align-self: stretch
+    margin-bottom: -2px
   &__categories
     grid-row: 1 / 4
+  &__legal
+    justify-self: end
+    margin-right: 7px
+  &__additional
+    margin-right: 5px
   &__social
     &-links
       display: flex
@@ -29,6 +35,7 @@
   &__contact
     &-details
       grid-column: span 2
+      margin-top: 10px
     &-form
       grid-column: span 2
   &__form
@@ -36,6 +43,7 @@
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
+    margin-top: 10px
   &__ul
     padding: 0
     margin: 0
@@ -85,7 +93,10 @@
     padding: 18px 23px
     border: none
     flex-basis: 100%
-    margin-bottom: 23px
+    margin-bottom: 20px
+    max-height: 123px
+    &-title
+      margin-bottom: 34px
   &__button
     min-width: 160px
     min-height: 50px
@@ -104,6 +115,33 @@
     font-size: 12px
     line-height: 15px
     color: $footer-text
+  &-bottom
+    grid-column: 2 / 5
+    display: flex
+    justify-content: space-between
+  &__payment
+    list-style: none
+    margin: 0
+    padding: 0
+    grid-column: 4 / 5
+    justify-self: end
+    margin-top: 75px
+  &__disclaimer
+    display: flex
+    justify-self: center
+    list-style: none
+    padding: 0
+    grid-column: 2 / 4
+    margin: 80px 0 0 0
+    &-item
+      margin-right: 14px
+    &-link
+      text-decoration: none
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $footer-text
 
 
 
