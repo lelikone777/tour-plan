@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -25,7 +25,10 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile_hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -40,7 +43,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile_hidden">
             <img
               src="img/user-avatar.jpg"
               alt="avatar: Nathan"
@@ -62,6 +65,38 @@
         <div class="container navbar-bottom__container">
           <nav>
             <ul class="navbar-menu">
+              <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+                <a
+                  href="#"
+                  class="user navbar__user navbar__user--mobile_visible"
+                >
+                  <img
+                    src="img/user-avatar.jpg"
+                    alt="avatar: Nathan"
+                    class="avatar user__avatar"
+                  />
+                  <span class="user__name user__name--light">Nathan</span>
+                </a>
+              </li>
+              <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+                <form
+                  action="#"
+                  class="search navbar__search navbar__search--mobile_visible"
+                >
+                  <input
+                    type="text"
+                    class="search__input"
+                    placeholder="Search Location"
+                  />
+                  <button class="button search__button">
+                    <img
+                      src="img/search.svg"
+                      alt="icon: search"
+                      class="search__image"
+                    />
+                  </button>
+                </form>
+              </li>
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">All Deals</a>
               </li>
@@ -741,7 +776,9 @@
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__message-title">Send us a message</h3>
+            <h3 class="footer__title footer__message-title">
+              Send us a message
+            </h3>
             <form action="#" class="footer__form">
               <input
                 type="text"
@@ -766,35 +803,30 @@
           </div>
           <!-- /.footer__contacts-form -->
 
+          <ul class="footer__disclaimer">
+            <li class="footer__disclaimer-item">
+              <a href="#" class="footer__disclaimer-link">Disclaimer</a>
+            </li>
+            <li class="footer__disclaimer-item">
+              <a href="#" class="footer__disclaimer-link">Conditions of use</a>
+            </li>
+            <li class="footer__disclaimer-item">
+              <a href="#" class="footer__disclaimer-link"
+                >Cancellation policy</a
+              >
+            </li>
+          </ul>
 
-              <ul class="footer__disclaimer">
-                <li class="footer__disclaimer-item">
-                  <a href="#" class="footer__disclaimer-link">Disclaimer</a>
-                </li>
-                <li class="footer__disclaimer-item">
-                  <a href="#" class="footer__disclaimer-link"
-                    >Conditions of use</a
-                  >
-                </li>
-                <li class="footer__disclaimer-item">
-                  <a href="#" class="footer__disclaimer-link"
-                    >Cancellation policy</a
-                  >
-                </li>
-              </ul>
-
-              <ul class="footer__payment">
-                <li class="footer__payment-item">
-                  <a href="#" class="footer__disclaimer-link"
-                    ><img
-                      src="img/footer-payment.jpg"
-                      alt="#"
-                      class="footer__payment-img"
-                  /></a>
-                </li>
-              </ul>
-
-            </div>
+          <ul class="footer__payment">
+            <li class="footer__payment-item">
+              <a href="#" class="footer__disclaimer-link"
+                ><img
+                  src="img/footer-payment.jpg"
+                  alt="#"
+                  class="footer__payment-img"
+              /></a>
+            </li>
+          </ul>
         </div>
         <!-- /.footer-wrapper -->
       </div>
