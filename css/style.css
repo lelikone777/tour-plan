@@ -17,6 +17,10 @@ img {
   margin: auto;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1777,7 +1781,8 @@ template {
     display: none;
   }
   .navbar-bottom--visible {
-    display: block !important;
+    display: block;
+    overflow: scroll;
   }
   .menu-button {
     display: flex;
