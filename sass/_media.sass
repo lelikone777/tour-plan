@@ -121,22 +121,27 @@
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
-        margin-top: 10px
-        margin-left: -50px
-    &__icon-wrapper
-      min-width: 30px
-      margin-left: 10px
+        margin-top: 13px
+        margin-left: -55px
+    &__icon
+      &-wrapper
+        min-width: 30px
+        margin-left: 10px
+      &-marker
+        margin-left: 0
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
-      margin-top: 10px
+      margin-top: 8px
+      margin-left: -1px
     &__legal
       grid-column: span 2
-      margin-top: 10px
+      margin-top: 7px
+      margin-right: 12px
     &__additional
       grid-column: span 2
-      margin-top: 10px
-      margin-left: -35px
+      margin-top: 8px
+      margin-left: -40px
     &__contact
       &-details
         grid-column: span 5
@@ -146,6 +151,7 @@
         grid-column: span 5
         grid-row: 4
         max-width: 542px
+        margin-left: 0
     &__payment
       margin-top: 15px
       justify-self: end
@@ -157,7 +163,7 @@
 
 @media (max-width: 768px)
   body
-    padding: 78px
+    padding-top: 78px
   .container
     max-width: 576px
     width: 92%
@@ -424,7 +430,7 @@
         h3
           width: 100%
           display: block
-          margin-bottom: 24px
+          margin-bottom: 18px
       &-links
         margin-left: 2px
     &__additional

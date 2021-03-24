@@ -1680,26 +1680,31 @@ template {
     grid-row: 1 / 2;
     grid-column: span 4;
     align-self: center;
-    margin-top: 10px;
-    margin-left: -50px;
+    margin-top: 13px;
+    margin-left: -55px;
   }
   .footer__icon-wrapper {
     min-width: 30px;
     margin-left: 10px;
   }
+  .footer__icon-marker {
+    margin-left: 0;
+  }
   .footer__categories {
     grid-row: 2 / 3;
     grid-column: span 2;
-    margin-top: 10px;
+    margin-top: 8px;
+    margin-left: -1px;
   }
   .footer__legal {
     grid-column: span 2;
-    margin-top: 10px;
+    margin-top: 7px;
+    margin-right: 12px;
   }
   .footer__additional {
     grid-column: span 2;
-    margin-top: 10px;
-    margin-left: -35px;
+    margin-top: 8px;
+    margin-left: -40px;
   }
   .footer__contact-details {
     grid-column: span 5;
@@ -1710,6 +1715,7 @@ template {
     grid-column: span 5;
     grid-row: 4;
     max-width: 542px;
+    margin-left: 0;
   }
   .footer__payment {
     margin-top: 15px;
@@ -1725,7 +1731,7 @@ template {
 
 @media (max-width: 768px) {
   body {
-    padding: 78px;
+    padding-top: 78px;
   }
   .container {
     max-width: 576px;
@@ -2047,7 +2053,7 @@ template {
   .footer__social-network h3 {
     width: 100%;
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
   }
   .footer__social-links {
     margin-left: 2px;
