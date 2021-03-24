@@ -36,17 +36,6 @@ img {
   border: none;
 }
 
-.button {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: #fff;
-  border-radius: 4px;
-  border: none;
-  background-color: #EC1F46;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1498,6 +1487,14 @@ template {
   padding: 18px;
   min-height: 50px;
   min-width: 160px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  background-color: #EC1F46;
 }
 
 .footer__info {
@@ -1621,6 +1618,16 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+}
+
+.search__button-thankyou {
+  color: #BDBDBD;
+  text-decoration: none;
+  display: block;
+}
+
+.hotel-thankyou__description {
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1200px) {
