@@ -47,6 +47,14 @@ img {
   background-color: #EC1F46;
 }
 
+input::placeholder {
+  color: #BDBDBD;
+}
+
+textarea::placeholder {
+  color: #BDBDBD;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1601,11 +1609,12 @@ template {
 }
 
 .modal__title {
+  margin-top: 0px;
+  margin-bottom: 15px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  margin-bottom: 15px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -1618,7 +1627,15 @@ template {
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
+}
+
+.modal__button {
+  margin-right: 41px;
+  line-height: 15px;
+  padding: 18px;
+  min-height: 50px;
+  min-width: 160px;
 }
 
 .modal__info {
