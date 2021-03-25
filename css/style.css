@@ -1471,6 +1471,9 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+}
+
+.footer__input::placeholder {
   color: #BDBDBD;
 }
 
@@ -1486,11 +1489,14 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
 }
 
 .footer__message-title {
   margin-bottom: 33px;
+}
+
+.footer__message::placeholder {
+  color: #BDBDBD;
 }
 
 .footer__button {
