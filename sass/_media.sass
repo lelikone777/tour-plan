@@ -19,6 +19,9 @@
       margin-top: 40px
 
 @media (max-width: 992px)
+  .modal__info
+    display: block
+    margin-left: auto
   .container, .newsletter-wrapper
     max-width: 700px
   .logo
@@ -183,10 +186,13 @@
     &__info
       display: block
       margin-right: 1px
-  .modal__dialog--visible
-    padding: 33px 30px
+
+
+  
 
 @media (max-width: 768px)
+  .modal__dialog--visible
+    max-width: 90%
   body
     padding-top: 78px
   .container
@@ -330,9 +336,7 @@
       flex-basis: 100%
     &__disclaimer
       grid-column: span 4
-  .modal__info
-    display: block
-    width: 100%
+
 
 
 
@@ -538,6 +542,10 @@
       width: 100%
       flex-wrap: wrap
       margin-top: 24px
+  .modal__dialog
+    min-width: 300px
+    padding: 33px 10%
+
  
 
 
