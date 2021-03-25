@@ -1629,6 +1629,15 @@ template {
   color: #BDBDBD;
 }
 
+.thankyou__link {
+  color: #bdbdbd;
+}
+
+.thankyou__description {
+  display: block;
+  margin-bottom: 35px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
