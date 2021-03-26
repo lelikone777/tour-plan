@@ -36,6 +36,29 @@ img {
   border: none;
 }
 
+.button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  background-color: #EC1F46;
+}
+
+input::placeholder {
+  color: #BDBDBD;
+}
+
+textarea::placeholder {
+  color: #BDBDBD;
+}
+
+.modal__message {
+  overflow: scroll;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1372,11 +1395,12 @@ template {
   display: flex;
   align-content: center;
   margin-left: 7px;
+  margin-top: 4px;
 }
 
 .footer__contact-details {
   grid-column: span 2;
-  margin-top: 10px;
+  margin-top: 13px;
 }
 
 .footer__contact-form {
@@ -1407,6 +1431,10 @@ template {
   text-transform: uppercase;
 }
 
+.footer__title-categories {
+  margin-bottom: 19px;
+}
+
 .footer__title--inline {
   margin: 0;
   margin-right: 43px;
@@ -1425,6 +1453,14 @@ template {
   font-size: 14px;
   line-height: 160%;
   color: #BDBDBD;
+}
+
+.footer__item-marker {
+  margin-bottom: 18px;
+}
+
+.footer__item-phone {
+  margin-bottom: 24px;
 }
 
 .footer__item--mb-2 {
@@ -1460,6 +1496,9 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+}
+
+.footer__input::placeholder {
   color: #BDBDBD;
 }
 
@@ -1475,14 +1514,18 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
 }
 
 .footer__message-title {
   margin-bottom: 33px;
 }
 
+.footer__message::placeholder {
+  color: #BDBDBD;
+}
+
 .footer__button {
+  margin-top: 4px;
   line-height: 15px;
   padding: 18px;
   min-height: 50px;
@@ -1544,6 +1587,10 @@ template {
   color: #BDBDBD;
 }
 
+.modal {
+  overflow: auto;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1566,6 +1613,8 @@ template {
   position: fixed;
   top: 50%;
   left: 50%;
+  max-height: 478px;
+  height: 90%;
   max-width: 478px;
   padding: 33px 88px;
   background-color: #0A223D;
@@ -1576,6 +1625,7 @@ template {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s;
+  overflow-y: auto;
 }
 
 .modal__dialog--visible {
@@ -1592,11 +1642,12 @@ template {
 }
 
 .modal__title {
+  margin-top: 0px;
+  margin-bottom: 15px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  margin-bottom: 15px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -1604,12 +1655,28 @@ template {
 .modal__input {
   width: 100%;
   margin-bottom: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modal__button {
+  margin-right: 41px;
+  line-height: 15px;
+  padding: 18px;
+  min-height: 50px;
+  min-width: 160px;
 }
 
 .modal__info {
@@ -1620,14 +1687,23 @@ template {
   color: #BDBDBD;
 }
 
-.search__button-thankyou {
-  color: #BDBDBD;
+.thankyou__link {
+  color: #bdbdbd;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  background-color: #EC1F46;
   text-decoration: none;
-  display: block;
+  padding: 18px;
 }
 
-.hotel-thankyou__description {
-  margin-bottom: 50px;
+.thankyou__description {
+  display: block;
+  margin-bottom: 35px;
 }
 
 @media (max-width: 1200px) {
@@ -1655,6 +1731,10 @@ template {
 }
 
 @media (max-width: 992px) {
+  .modal__info {
+    display: block;
+    margin-left: auto;
+  }
   .container, .newsletter-wrapper {
     max-width: 700px;
   }
@@ -1871,6 +1951,9 @@ template {
 }
 
 @media (max-width: 768px) {
+  .modal__dialog--visible {
+    max-width: 90%;
+  }
   body {
     padding-top: 78px;
   }
@@ -2287,5 +2370,9 @@ template {
     width: 100%;
     flex-wrap: wrap;
     margin-top: 24px;
+  }
+  .modal__dialog {
+    min-width: 300px;
+    padding: 33px 10%;
   }
 }

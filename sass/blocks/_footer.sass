@@ -36,10 +36,11 @@
       display: flex
       align-content: center
       margin-left: 7px
+      margin-top: 4px
   &__contact
     &-details
       grid-column: span 2
-      margin-top: 10px
+      margin-top: 13px
     &-form
       grid-column: span 2
       margin-left: 6px
@@ -60,6 +61,8 @@
     line-height: 23px
     margin: 0 0 16px 0
     text-transform: uppercase
+    &-categories
+      margin-bottom: 19px
     &--inline
       margin: 0
       margin-right: 43px
@@ -74,13 +77,20 @@
     font-size: 14px
     line-height: 160%
     color: $footer-text
+    &-marker
+      margin-bottom: 18px
+    &-phone
+      margin-bottom: 24px
     &--mb-2
       margin-bottom: 20px
   &__icon
     &-wrapper
       min-width: 40px
     &-marker
-      margin-left: 6px
+      margin-left: 6px  
+    &-phone
+    &-email
+
   &__text
     display: block
     color: $footer-text
@@ -98,6 +108,7 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
+  &__input::placeholder
     color: #BDBDBD
   &__message
     flex-basis: 100%
@@ -111,10 +122,12 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
-    color: #BDBDBD
     &-title
       margin-bottom: 33px
+  &__message::placeholder   
+    color: #BDBDBD
   &__button
+    margin-top: 4px
     line-height: 15px
     padding: 18px
     min-height: 50px

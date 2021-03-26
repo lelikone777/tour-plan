@@ -269,7 +269,11 @@
               </div>
               <!-- /.booking__call-center -->
 
-              <button data-toggle="modal"  data-href='#booking-modal' class="button booking__button">
+              <button
+                data-toggle="modal"
+                data-href="#booking-modal"
+                class="button booking__button"
+              >
                 View Other Options
               </button>
             </div>
@@ -595,7 +599,7 @@
               class="card__image"
             />
             <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -605,7 +609,7 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -617,7 +621,7 @@
             <h3 class="card__title">
               Tamarind falls hiking<br />trip - full day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -627,7 +631,7 @@
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
         </div>
@@ -647,7 +651,7 @@
             />
           </a>
           <div class="footer__list footer__categories">
-            <h3 class="footer__title">ALL CATEGORIES</h3>
+            <h3 class="footer__title footer__title-categories">ALL CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">All Deals </a>
@@ -754,8 +758,8 @@
                   />
                 </div>
 
-                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United 
-                States 
+                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                States
               </li>
               <li class="footer__item footer__item-phone">
                 <div class="footer__icon-wrapper footer__icon-wrapper_phone">
@@ -765,7 +769,7 @@
                     alt="logo: phone-call"
                   />
                 </div>
-                
+
                 Tel (business hours) : 269 1500<br />
                 Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
                 pm)<br />
@@ -859,21 +863,26 @@
         <form action="send.php" method="POST" class="modal__form">
           <input
             type="text"
-            class="input modal__input modal__input-name"
+            class="input modal__input modal__input modal__input-name"
             placeholder="Your Full Name*"
             name="name"
           />
           <input
             type="text"
-            class="input modal__input"
+            class="input modal__input modal__input-phone"
             placeholder="Phone Number*"
             name="phone"
           />
 
+          <input
+            type="text"
+            class="input modal__input modal__input-email"
+            placeholder="Email*"
+            name="email"
+          />
+
           <textarea
             class="message modal__message"
-            cols="30"
-            rows="10"
             placeholder="Message"
             name="message"
           ></textarea>
@@ -902,18 +911,24 @@
           />
           <input
             type="text"
-            class="input modal__input"
+            class="input modal__input modal__input-phone"
             placeholder="Phone Number*"
             name="phone"
           />
 
+          <input
+            type="text"
+            class="input modal__input modal__input-email"
+            placeholder="Email*"
+            name="email"
+          />
+
           <textarea
             class="message modal__message"
-            cols="30"
-            rows="10"
             placeholder="Message"
             name="message"
           ></textarea>
+
           <button class="button modal__button" type="submit">Send</button>
           <span class="modal__info">* Required Fields</span>
         </form>
