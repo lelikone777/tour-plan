@@ -80,6 +80,19 @@ $(document).ready(function () {
 
   $('.modal__form').validate();
 
+
+
+
+
+
+
+
+
+
+
+
+  AOS.init();
+
 });
 
 
