@@ -77,4 +77,9 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
     document.body.classList.remove("lock");
   }
+
+  $('.modal__form').validate();
+
 });
+
+
