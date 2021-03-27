@@ -1453,6 +1453,7 @@ template {
 
 .footer__item {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   font-style: normal;
   font-weight: normal;
@@ -1467,6 +1468,16 @@ template {
 
 .footer__item-phone {
   margin-bottom: 24px;
+}
+
+.footer__item-phone_link {
+  display: flex;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
 }
 
 .footer__item--mb-2 {
