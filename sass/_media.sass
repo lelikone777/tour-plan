@@ -18,6 +18,12 @@
         flex-basis: 100%
     &__payment, &__disclaimer
       margin-top: 40px
+    &__item
+      flex-wrap: nowrap
+      &-wrapper
+        max-width: 448px
+      &-phone_link
+        display: contents
 
 @media (max-width: 992px)
   .modal
@@ -179,11 +185,13 @@
         grid-row: 4
         max-width: 539px
         margin-left: 0
-    &__item-marker
-      margin-bottom: 13px
-    &__item-phone
-      margin-bottom: 21px
-    &__item-email
+    &__item 
+      &-wrapper
+        max-width: 448px
+      &-marker
+        margin-bottom: 13px
+      &-phone
+        margin-bottom: 21px
     &__payment
       margin-top: 15px
       justify-self: end
