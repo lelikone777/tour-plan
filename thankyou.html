@@ -166,18 +166,19 @@
         <div class="hotel-info">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
-              <h1 class="hotel-name hotel-info__name">Сообщение отправлено</h1>
+              <h1 class="hotel-name hotel-info__name">Message sent</h1>
             </div>
             <!-- /.hotel-wrapper -->
             <p
               class="hotel-description hotel-info__description thankyou__description"
             >
-              Наш менеджер позвонит Вам!
+              Our manager will call you!
             </p>
             <a
               href="https://alekseykalinin.ru/tour-plan/"
               class="thankyou__link"
-              >На главную</a
+            >
+              To the main</a
             >
           </div>
           <!-- /.hotel-info__text -->
@@ -338,30 +339,38 @@
             </ul>
           </div>
           <!-- /.footer__contact-details -->
-          <div class="footer__contact-form">
+           <div class="footer__contact-form">
             <h3 class="footer__title footer__message-title">
               Send us a message
             </h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input footer__input-name"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="form footer__form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input footer__input-name"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength= "2"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input input-phone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                  minlength= "11"
+                />
+              </div>
 
               <textarea
                 class="footer__message"
                 cols="30"
                 rows="10"
                 placeholder="Message"
-                name="message"
+                name="message footer__message"
               ></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
