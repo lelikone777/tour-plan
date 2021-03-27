@@ -1534,6 +1534,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  resize: none;
 }
 
 .footer__message-title {
@@ -2140,6 +2141,9 @@ template {
   .card {
     width: 49%;
     min-height: 255px;
+  }
+  .footer__item {
+    flex-wrap: nowrap;
   }
   .footer__input-group {
     flex-basis: 100%;
