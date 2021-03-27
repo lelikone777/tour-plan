@@ -24,8 +24,27 @@ $(document).ready(function () {
   //   myMap.geoObjects.add(placemark);
   // }
 
+  let map_container = document.getElementById("map_container");
+  let options_map = {
+    once: true,
+    passive: true,
+    capture: true,
+  };
+  map_container.addEventListener("click", start_lazy_map, options_map);
+  map_container.addEventListener("mouseover", start_lazy_map, options_map);
+  map_container.addEventListener("touchstart", start_lazy_map, options_map);
+  map_container.addEventListener("touchmove", start_lazy_map, options_map);
 
-  
+  let map_loaded = false;
+  function start_lazy_map() {
+    if (!map_loaded) {
+      let map_block = document.getElementById("ymap_lazy");
+      map_loaded = true;
+      map_block.setAttribute("src", map_block.getAttribute("data-src"));
+      map_block.removeAttribute("data-src");
+      console.log("YMAP LOADED");
+    }
+  }
 
   const hotelSlider = new Swiper(".hotel-slider", {
     loop: true,
@@ -86,12 +105,12 @@ $(document).ready(function () {
     $(this).validate({
       errorClass: "invalid",
       rules: {
-          phone: {
-            required: true,
-            minlength: 16,
-            maxlength: 16,
-          },
+        phone: {
+          required: true,
+          minlength: 16,
+          maxlength: 16,
         },
+      },
       messages: {
         name: {
           required: "provide a name",
