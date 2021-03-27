@@ -1823,6 +1823,9 @@ template {
   .other-packages__wrapper {
     grid-template: 1fr 1fr 1fr/ 1fr 1fr;
   }
+  .other-packages__main-card {
+    overflow-y: auto;
+  }
   .newsletter {
     padding: 72px 0 73px;
   }
