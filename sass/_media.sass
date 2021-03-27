@@ -20,9 +20,14 @@
       margin-top: 40px
 
 @media (max-width: 992px)
-  .modal__info
-    display: block
-    margin-left: auto
+  .modal
+    &__info
+      display: block
+      margin-left: auto
+    &__dialog
+      overflow-y: auto
+      max-height: 478px
+      height: 90%  
   .container, .newsletter-wrapper
     max-width: 700px
   .logo
@@ -492,6 +497,7 @@
       justify-self: start
       margin: 0
     &__item
+      flex-wrap: nowrap
       &-marker
         margin-bottom: 19px
       &-phone
@@ -550,7 +556,7 @@
     min-width: 300px
     padding: 33px 10%
 
-    
+
  
 
 

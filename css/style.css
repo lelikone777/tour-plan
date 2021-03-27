@@ -1416,7 +1416,6 @@ template {
 
 .footer__form {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 10px;
@@ -1562,6 +1561,7 @@ template {
 }
 
 .footer__info {
+  align-self: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -1608,10 +1608,6 @@ template {
   color: #BDBDBD;
 }
 
-.modal {
-  overflow: auto;
-}
-
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1634,8 +1630,6 @@ template {
   position: fixed;
   top: 50%;
   left: 50%;
-  max-height: 478px;
-  height: 90%;
   max-width: 478px;
   padding: 33px 88px;
   background-color: #0A223D;
@@ -1646,7 +1640,6 @@ template {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s;
-  overflow-y: auto;
 }
 
 .modal__dialog--visible {
@@ -1758,6 +1751,11 @@ template {
   .modal__info {
     display: block;
     margin-left: auto;
+  }
+  .modal__dialog {
+    overflow-y: auto;
+    max-height: 478px;
+    height: 90%;
   }
   .container, .newsletter-wrapper {
     max-width: 700px;
@@ -2327,6 +2325,9 @@ template {
     grid-column: 1;
     justify-self: start;
     margin: 0;
+  }
+  .footer__item {
+    flex-wrap: nowrap;
   }
   .footer__item-marker {
     margin-bottom: 19px;

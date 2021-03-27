@@ -1,5 +1,4 @@
 .modal
-  overflow: auto
   &__overlay
     position: fixed
     left: 0
@@ -18,8 +17,6 @@
     position: fixed
     top: 50%
     left: 50%
-    max-height: 478px
-    height: 90%  
     max-width: 478px
     padding: 33px 88px
     background-color: $dark
@@ -30,7 +27,6 @@
     visibility: hidden
     opacity: 0
     transition: opacity 0.2s
-    overflow-y: auto
     &--visible
       visibility: visible
       opacity: 1

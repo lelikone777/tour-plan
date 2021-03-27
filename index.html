@@ -473,7 +473,7 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form action="#" class="subscribe newsletter__subscribe" action="send.php" method="POST">
           <input
             type="text"
             class="subscribe__input"
@@ -817,6 +817,7 @@
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
+
             <ul class="footer__ul">
               <li class="footer__item footer__item-marker">
                 <div class="footer__icon-wrapper footer__icon-wrapper_marker">
@@ -826,10 +827,12 @@
                     alt="logo: map-marker"
                   />
                 </div>
-
-                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
-                States
+                <div class="footer__item-wrapper">
+                  9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                  States
+                </div>
               </li>
+
               <li class="footer__item footer__item-phone">
                 <div class="footer__icon-wrapper footer__icon-wrapper_phone">
                   <img
@@ -858,6 +861,7 @@
                   >
                 </div>
               </li>
+
               <li class="footer__item footer__item-email">
                 <div class="footer__icon-wrapper footer__icon-wrapper_email">
                   <img
@@ -890,6 +894,7 @@
                   placeholder="Your Full Name*"
                   name="name"
                   required
+                  minlength= "2"
                 />
               </div>
               <div class="footer__input-group">
@@ -899,6 +904,7 @@
                   placeholder="Phone Number*"
                   name="phone"
                   required
+                  minlength= "11"
                 />
               </div>
 
@@ -969,7 +975,7 @@
             placeholder="Phone Number*"
             name="phone"
             required
-            minlength="2"
+            minlength="11"
           />
 
           <input
