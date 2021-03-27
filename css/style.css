@@ -680,6 +680,7 @@ template {
   line-height: 18px;
   font-style: normal;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .rating__counter-small {
