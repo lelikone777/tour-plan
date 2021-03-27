@@ -1599,6 +1599,10 @@ template {
   margin-right: 14px;
 }
 
+.footer__disclaimer-item-wrapper a {
+  text-decoration: none;
+}
+
 .footer__disclaimer-link {
   text-decoration: none;
   font-style: normal;
