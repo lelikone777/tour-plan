@@ -82,7 +82,13 @@ $(document).ready(function () {
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
-      
+      rules: {
+          phone: {
+            required: true,
+            minlength: 16,
+            maxlength: 16,
+          },
+        },
       messages: {
         name: {
           required: "provide a name",
@@ -94,8 +100,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone is required",
-          minlength: 16,
-          maxlength: 16,
+          minlength: "At least 11 characters reguired",
         },
       },
     });
