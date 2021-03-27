@@ -80,6 +80,10 @@
   .other-packages
     &__wrapper
       grid-template: 1fr 1fr 1fr/ 1fr 1fr
+    &__title
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
     &__main-card
       overflow-y: auto
   .newsletter
@@ -203,11 +207,18 @@
     &__info
       display: block
       margin-right: 1px
+  .hover-primary
+    text-decoration: none
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    color: #BDBDBD
 
 
   
 
-@media (max-width: 768px)
+@media (max-width: 767px)
   .modal__dialog--visible
     max-width: 90%
   body
@@ -366,7 +377,7 @@
     max-width: 87.5%
   .navbar
     &-top
-      padding-top: 20px
+      padding-top: 30px
       &__menu-button
         margin-top: 7px
         margin-right: 2px
@@ -411,6 +422,11 @@
       grid-template-columns: 1fr 
     &__main-card
       grid-column: 1 
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
   .newsletter
     padding: 76px 0 83px
     &-title
@@ -447,6 +463,7 @@
       &__text
         font-size: 12px
         line-height: 160%
+        text-align-last: left
       &__button
         top: 10px
         &--prev
@@ -555,6 +572,7 @@
       align-items: start
       flex-wrap: wrap
       margin-top: -5px
+      margin-left: 0
       &-item
         margin-right: 0
     &__payment
@@ -569,7 +587,21 @@
     padding: 33px 10%
 
 
- 
+@media ( min-width: 992px )
+  .hover-primary
+    text-decoration: none
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    color: #BDBDBD
+    &:hover
+      color: $primary
+      border-bottom: 1px solid $primary
+  .button
+    &:hover
+      background-color: #be9c9c
+    
 
 
 
