@@ -27,7 +27,7 @@ try {
     $mail->SMTPAuth   = true;
     // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
-
+    $mail->IsHTML(true);
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'lelikkalina@bk.ru'; // Логин на почте
