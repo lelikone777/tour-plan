@@ -93,6 +93,8 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone is required",
+          minlength: 16,
+          maxlength: 16,
         },
       },
     });
