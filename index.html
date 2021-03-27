@@ -862,19 +862,25 @@
             <h3 class="footer__title footer__message-title">
               Send us a message
             </h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input footer__input-name"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="form footer__form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input footer__input-name"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input input-phone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
 
               <textarea
                 class="footer__message"
@@ -928,25 +934,31 @@
           <img src="img/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title modal__message-title">Send us a feedback</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="form modal__form">
           <input
             type="text"
             class="input modal__input modal__input modal__input-name"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="2"
           />
           <input
-            type="text"
-            class="input modal__input modal__input-phone"
+            type="tel"
+            class="input modal__input modal__input-phone input-phone"
             placeholder="Phone Number*"
             name="phone"
+            required
+            minlength="2"
           />
 
           <input
-            type="text"
+            type="email"
             class="input modal__input modal__input-email"
             placeholder="Email*"
             name="email"
+            required
+            minlength="2"
           />
 
           <textarea
@@ -970,7 +982,7 @@
           <img src="img/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title modal__message-title">Send us rating</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="form modal__form">
           <input
             type="text"
             class="input modal__input modal__input-name"
@@ -981,10 +993,11 @@
           />
           <input
             type="tel"
-            class="input modal__input modal__input-phone"
+            class="input modal__input modal__input-phone input-phone"
             placeholder="Phone Number*"
             name="phone"
             required
+            minlength="2"
           />
 
           <input
@@ -993,6 +1006,7 @@
             placeholder="Email*"
             name="email"
             required
+            minlength="2"
           />
 
           <textarea
@@ -1015,6 +1029,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>

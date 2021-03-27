@@ -65,7 +65,7 @@ $(document).ready(function () {
 
   function openModal() {
     var targetModal = $(this).attr("data-href");
-    $(targetModal).find(".modal__overlay").addClass('modal__overlay--visible');
+    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
     $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
     document.body.classList.toggle("lock");
   }
@@ -78,21 +78,27 @@ $(document).ready(function () {
     document.body.classList.remove("lock");
   }
 
-  $('.modal__form').validate();
+  $(".input-phone").mask("+7 (000) 000-00-00");
 
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Укажите имя",
+          minlength: "Имя должно быть не короче 2 букв",
+        },
+        email: {
+          required: "Нам нужен ваш адрес электронной почты",
+          email:
+            "Адрес электронной почты должен быть в формате name@domain.com",
+        },
+        phone: {
+          required: "Телефон обязателен",
+        },
+      },
+    });
 
-
-
-
-
-
-
-
-
-
-
-  AOS.init();
-
+    AOS.init();
+  });
 });
-
-
