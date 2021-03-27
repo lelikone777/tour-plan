@@ -48,6 +48,10 @@ img {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: #be9c9c;
+}
+
 input::placeholder {
   color: #BDBDBD;
 }
