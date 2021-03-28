@@ -84,7 +84,7 @@ $(document).ready(function () {
       rules: {
         phone: {
           required: true,
-          minlength: 12,
+          minlength: 11,
           maxlength: 16,
         },
         email: {
