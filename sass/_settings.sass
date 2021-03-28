@@ -38,15 +38,18 @@ img
   background-color: $primary
   cursor: pointer
   outline: none
-button
+  box-shadow: none
+button:hover, button:focus 
   outline: none
-
+  box-shadow: none
+// a:active, a:focus 
+//   outline: none
 input::placeholder
   color: #BDBDBD
 textarea::placeholder   
   color: #BDBDBD
-// .modal__message
-//   overflow-y: scroll
+.modal__message
+  overflow-y: auto
 .invalid
   color: $primary
 .map
