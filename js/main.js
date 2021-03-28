@@ -84,8 +84,11 @@ $(document).ready(function () {
       rules: {
         phone: {
           required: true,
-          minlength: 16,
+          minlength: 12,
           maxlength: 16,
+        },
+        email: {
+          minlength: 6,
         },
       },
       messages: {
