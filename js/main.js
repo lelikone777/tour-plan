@@ -19,7 +19,6 @@ $(document).ready(function () {
       map_loaded = true;
       map_block.setAttribute("src", map_block.getAttribute("data-src"));
       map_block.removeAttribute("data-src");
-      console.log("YMAP LOADED");
     }
   }
 
@@ -84,7 +83,7 @@ $(document).ready(function () {
       rules: {
         phone: {
           required: true,
-          minlength: 11,
+          minlength: 16,
         },
         email: {
           minlength: 6,
